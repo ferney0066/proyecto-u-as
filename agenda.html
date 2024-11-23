@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agenda</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-dark">
+  <!-- ADD TASK -->
+  <header>
+    <div class="top">
+    
+      <!-- menu de la pagina -->
+      <nav class="menu">
+        <img src="/img/WhatsApp Image 2024-10-19 at 19.36.24.jpeg"class="logo">        
+        <!-- <a href="/loginfirebase.html">login</a> -->
+    
+ 
+        <a href="main.html">Menu</a>  
+        <a href="/contacto.html">contacto</a>
+        <a href="reseñas.html">Reseñas</a>  
+        <a href="Perfil.html">Perfil</a>  
+
+        <a href="/Quienes_Somos.html">¿Quienes Somos?</a>
+        <a onclick="cerrarSesion()" href="/index.html">Cerrar sesion</a>
+        
+
+      </nav>
+      <!-- fin del menu -->
+    </div>
+  </header>
+<section class="agenda2">
+<h2>Aqui podras agendar la cita y comentarnos el servicio que desees</h2>
+
+
+
+</section>
+
+
+  <!-- inicia contenedor -->
+  <div class="container">
+    <!-- contenedor del formulario -->
+    <div class="formul">
+      <!-- Empieza el formulario -->
+      <form id="task-form">
+        <div class="tarea">
+          <div id="titlediccionario">
+           <label >Fecha de la cita </label>
+          </div>
+
+          <input type="date" type="text" id="task-title" class="tituloadmin" class="My First Title"
+             autofocus />
+          
+             <div class="descripcion">
+            <label for="serv">Tipo de servicio</label>
+          </div>
+
+          <textarea id="task-description" rows="3" class="form-control mb-3" >
+          </textarea>
+
+          <div class="boto">
+            <button class="btr" id="btn-task-form" id="Save">Guardar</button> 
+          </div>
+
+        </div>
+      </form>
+      <!-- termina el formulario -->
+    </div>
+
+    
+    
+    <table class="tablatitu">
+
+      <tr>
+    
+        <th id="palabrasnuevas">Fecha</th>
+    
+        <th id="notas">Servicio</th>
+    
+        <th id="losbotones">Botones</th>
+    
+      </tr>
+  
+    </table>
+
+
+
+    <!-- mostramos las tareas -->
+    <div class="muestra-tareas" id="tasks-container"></div>
+
+  </div>
+
+  <!-- enlace del index.js -->
+  <script src="index.js" type="module"></script>
+
+
+<br></br>
+<!-- Pie de página -->
+<footer>
+  <div class="footer-content">
+      <p>&copy; 2024 Melissa Nails. Siguenos en nuestras redes sociales!!.</p>
+      <div class="social-media">
+          <a href="https://www.facebook.com/groups/729383839104950/?ref=share&mibextid=NSMWBT" target="_blank">Facebook</a> |
+          <a href="https://www.instagram.com/naildesiign_ideas/?igsh=MWJiYW5icDg5ajQ1cw%3D%3D" target="_blank">Instagram</a>
+      </div>
+  </div>
+</footer>
+
+
+</body>
+
+</html>

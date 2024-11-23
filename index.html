@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="shortcut icon" href="/img/icono.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="/style.css">
+  <!-- <link rel="stylesheet" href="/css/style_login.css"> -->
+  <link rel="viewport" content="">
+
+</head>
+
+<body>
+  <header>
+    <!-- inicio del menu -->
+    <nav class="menu">
+      <img src="/img/WhatsApp Image 2024-10-19 at 19.36.24.jpeg" alts="" class="logo">
+      
+      <a href="/registro.html">Registrate</a>
+     
+    </nav>
+    <!-- fin del menu -->
+  </header>
+
+
+  <div id="content_container">
+    <div id="form_container2">
+      <div id="form_header_container">
+        <h2 id="form_header"> Login </h2>
+      </div>
+
+      <div id="form_content_container">
+        <div id="form_content_inner_container">
+          <!-- <input class="input1" type="text" id="full_name" placeholder="Full name"> -->
+          <input class="input1" type="email" id="email" placeholder="Correo Electronico">
+          <input class="input1" type="password" id="password" placeholder="Contraseña">
+
+          <!-- <input type="text" id="favourite_song" placeholder="The Best Song Ever"> -->
+          <!-- <input type="text" id="milk_before_cereal" placeholder="Milk Before Cereal? ( Yes | No )"> -->
+
+          <div id="button_container">
+            <button class="button" id="entrar" onclick="login()">Login</button>
+            <!-- <button onclick="register()">Register</button> -->
+          </div>
+
+    <!-- se da la clase y algunos mensajes necesarios -->
+     
+        </div>
+      </div>
+
+    </div>
+    
+  </div>
+  <p class="parra3">Al registrarte aceptas nuestras Condiciones de uso y politicas de privacidad</p>
+     <!-- se puso para que se fuera para la ventana de loguin si no tiene una cuenta -->
+     <p class="parra2">¿No tienes una cuenta?ㅤ<a class="link" href="/registro.html">Registrate</a></p>
+
+
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+  <script src="/login.js"></script>
+</body>
+
+</html>
+
+
+

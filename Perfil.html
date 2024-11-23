@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agenda</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body class="bg-dark">
+  <!-- ADD TASK -->
+  <header>
+    <div class="top">
+    
+      <!-- menu de la pagina -->
+      <nav class="menu">
+        <img src="/img/WhatsApp Image 2024-10-19 at 19.36.24.jpeg"class="logo">        
+        <!-- <a href="/loginfirebase.html">login</a> -->
+        
+ 
+        <a href="main.html">Menu</a>  
+        <a href="/contacto.html">contacto</a>
+        <a href="/agenda.html">Agenda</a>
+        <a  href="/Quienes_Somos.html">¿Quienes Somos?</a>
+        <a onclick="cerrarSesion()" href="/index.html">Cerrar sesion</a>
+        
+
+      </nav>
+      
+    </div>
+
+  </header>
+    <!-- fin del menu -->
+    <div class="reseñas-container">
+    <h1>Perfil de Usuario</h1>
+    <div class="perfil" id="perfilUsuario">
+        <!-- Aquí se mostrarán los datos -->
+    </div>
+    </div>
+
+    <script>
+        // Obtener los datos del usuario desde localStorage
+        const nombre = localStorage.getItem('full_name');
+        const correo = localStorage.getItem('email');
+        const genero = localStorage.getItem('genero');
+
+        if (nombre && correo && genero) {
+            const perfilDiv = document.getElementById('perfilUsuario');
+            perfilDiv.innerHTML = `
+                <p><strong>Nombre:</strong> ${nombre}</p>
+                <p><strong>Correo:</strong> ${correo}</p>
+                <p><strong>Género:</strong> ${genero}</p>
+            `;
+        }else{
+        alert('No hay información disponible. Por favor, regístrese.');
+        window.location.href = 'registro.html'; // Redirigir al registro
+
+    }
+
+        function cerrarSesion() {
+            localStorage.clear(); // Limpiar los datos del usuario
+            alert('Sesión cerrada');
+        }
+
+        
+
+    </script>
+
+<script src="login_register.js"></script>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+<!-- Pie de página -->
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 Melissa Nails. Siguenos en nuestras redes sociales!!.</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/groups/729383839104950/?ref=share&mibextid=NSMWBT" target="_blank">Facebook</a> |
+            <a href="https://www.instagram.com/naildesiign_ideas/?igsh=MWJiYW5icDg5ajQ1cw%3D%3D" target="_blank">Instagram</a>
+        </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
